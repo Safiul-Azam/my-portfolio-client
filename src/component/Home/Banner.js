@@ -1,15 +1,20 @@
 import React from 'react';
 import Header from './Header';
 import myPhoto from '../../images/myPhoto/portfolio-2.jpeg'
-import shape from '../../images/myPhoto/shape-1.png'
+import shape from '../../images/myPhoto/shape-4.svg'
 
 const Banner = () => {
     return (
         <div className='bg-accent h-screen'>
             <Header></Header>
-            <div class="container mx-auto">
-                <div class="flex justify-around items-center mt-8 ">
-                    <div className='1/2 bg-primary bg-opacity-10 px-10 py-10 rounded-2xl'>
+            <div style={{
+                    background:`url(${shape})`,
+                    backgroundPosition:'bottom',
+                    backgroundRepeat:'no-repeat',
+                    backgroundSize:'cover'
+                    }} class="">
+                <div class="container mx-auto flex justify-around items-center mt-8 ">
+                    <div className='1/2 pt-10 pb-10 rounded-2xl'>
                         <img width={300} className='rounded-2xl' src={myPhoto} alt='MyPhoto' />
                     </div>
                     <div className='w-3/5'>
