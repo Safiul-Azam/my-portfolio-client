@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+*{
+  font-family: 'Yeseva One', cursive;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
