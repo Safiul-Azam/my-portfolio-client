@@ -5,12 +5,13 @@ import CustomLink from '../Link/CustomLink';
 const Header = () => {
     const menu = <>
     <CustomLink to='/home'>Home</CustomLink>
-    <CustomLink to='/home'>About</CustomLink>
-    <CustomLink to='/home'>Portfolio</CustomLink>
-    <CustomLink to='/home'>Blogs</CustomLink>
+    <CustomLink to='/about'>About</CustomLink>
+    <CustomLink to='/portfolio'>Portfolio</CustomLink>
+    <CustomLink to='/blogs'>Blogs</CustomLink>
+    <CustomLink to='/contact'>contact</CustomLink>
     </>
     return (
-        <div class="navbar ">
+        <div class="navbar bg-accent fixed">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabIndex="0" class="btn btn-ghost lg:hidden">
