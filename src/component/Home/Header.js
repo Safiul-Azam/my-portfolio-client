@@ -23,7 +23,7 @@ const Header = () => {
                 </div>
                 <Link to='/home' class="btn text-primary btn-ghost normal-case text-2xl tracking-widest">Timing</Link>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center hidden lg:flex z-10">
                 <ul class="menu menu-horizontal p-0 text-white gap-5">
                     {menu}
                 </ul>
