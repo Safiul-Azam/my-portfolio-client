@@ -11,7 +11,7 @@ const Header = () => {
     <CustomLink to='/contact'>contact</CustomLink>
     </>
     return (
-        <div class="navbar bg-accent fixed">
+        <div class="navbar bg-accent fixed top-0 z-20">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabIndex="0" class="btn btn-ghost lg:hidden">
