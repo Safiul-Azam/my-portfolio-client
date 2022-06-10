@@ -1,45 +1,93 @@
 [
     {
         "id": 1,
+        "titleName":"Wooden Tools",
+        "aboutSite":"woodworking tools manufacturing website",
+        "description1":"Implemented authentication by firebase and authorization by JSON web token. and without authentication & authorization users are not eligible to have access.",
+        "description2":"Created dashboard for admin and users. So they have some activities here like seeing orders, paying for their orders, updating their profile, etc.",
+        "description3":"Some activities for admin manage product adds a new product, make admin someone, Utilized stripe for payment method and nodeMailer, mail Gun to send mail",
+        "technology":"React, React-Bootstrap, Node, MongoDB, Express, JSON web token, Firebase, Dot env, React-Router, React-from-hooks",
         "liveLink": "https://wooden-tools-manufacturer.web.app/",
         "gitHubClient":"https://github.com/Safiul-Azam/wooden-tools-manufacturer-client",
         "gitHubServer": "https://github.com/Safiul-Azam/wooden-tools-manufacturer-server",
-        "img": "https://i.ibb.co/5cRNzQ1/project-3.png"
+        "img": "https://i.ibb.co/5cRNzQ1/project-3.png",
+        "img2": "https://i.ibb.co/hCRcfvS/banner-1.png",
+        "img3": "https://i.ibb.co/178B92n/banner-3.png"
     },
     {
         "id": 2,
+        "titleName":"Wooden Tools",
+        "aboutSite":"woodworking tools manufacturing website",
+        "description1":"Implemented authentication by firebase and authorization by JSON web token. and without authentication & authorization users are not eligible to have access.",
+        "description2":"Created dashboard for admin and users. So they have some activities here like seeing orders, paying for their orders, updating their profile, etc.",
+        "description3":"Some activities for admin manage product adds a new product, make admin someone, Utilized stripe for payment method and nodeMailer, mail Gun to send mail",
+        "technology":"React, React-Bootstrap, Node, MongoDB, Express, JSON web token, Firebase, Dot env, React-Router, React-from-hooks",
         "liveLink": "https://furniture-ware-house-c81c0.web.app/",
         "gitHubClient":"https://github.com/Safiul-Azam/furniture-warehouse-client",
         "gitHubServer": "https://github.com/Safiul-Azam/furniture-warehouse-server",
-        "img": "https://i.ibb.co/7vbMZNW/project-4.png"
+        "img": "https://i.ibb.co/7vbMZNW/project-4.png",
+        "img2": "https://i.ibb.co/hCRcfvS/banner-1.png",
+        "img3": "https://i.ibb.co/178B92n/banner-3.png"
     },
     {
         "id": 3,
+        "titleName":"Wooden Tools",
+        "aboutSite":"woodworking tools manufacturing website",
+        "description1":"Implemented authentication by firebase and authorization by JSON web token. and without authentication & authorization users are not eligible to have access.",
+        "description2":"Created dashboard for admin and users. So they have some activities here like seeing orders, paying for their orders, updating their profile, etc.",
+        "description3":"Some activities for admin manage product adds a new product, make admin someone, Utilized stripe for payment method and nodeMailer, mail Gun to send mail",
+        "technology":"React, React-Bootstrap, Node, MongoDB, Express, JSON web token, Firebase, Dot env, React-Router, React-from-hooks",
         "liveLink": "https://wooden-tools-manufacturer.web.app/",
         "gitHubClient":"https://truth-never-loses.web.app/",
         "gitHubServer": "",
-        "img": "https://i.ibb.co/ZX2z7wc/project-1.png"
+        "img": "https://i.ibb.co/ZX2z7wc/project-1.png",
+        "img2": "https://i.ibb.co/hCRcfvS/banner-1.png",
+        "img3": "https://i.ibb.co/178B92n/banner-3.png"
     },
     {
         "id": 4,
+        "titleName":"Wooden Tools",
+        "aboutSite":"woodworking tools manufacturing website",
+        "description1":"Implemented authentication by firebase and authorization by JSON web token. and without authentication & authorization users are not eligible to have access.",
+        "description2":"Created dashboard for admin and users. So they have some activities here like seeing orders, paying for their orders, updating their profile, etc.",
+        "description3":"Some activities for admin manage product adds a new product, make admin someone, Utilized stripe for payment method and nodeMailer, mail Gun to send mail",
+        "technology":"React, React-Bootstrap, Node, MongoDB, Express, JSON web token, Firebase, Dot env, React-Router, React-from-hooks",
         "liveLink": "https://gregarious-caramel-fa0a93.netlify.app/",
         "gitHubClient":"https://github.com/Safiul-Azam/choose-your-best-book-site",
         "gitHubServer": "",
-        "img": "https://i.ibb.co/TRzTbWB/project-6.png"
+        "img": "https://i.ibb.co/TRzTbWB/project-6.png",
+        "img2": "https://i.ibb.co/hCRcfvS/banner-1.png",
+        "img3": "https://i.ibb.co/178B92n/banner-3.png"
     },
     {
         "id": 5,
+        "titleName":"Wooden Tools",
+        "aboutSite":"woodworking tools manufacturing website",
+        "description1":"Implemented authentication by firebase and authorization by JSON web token. and without authentication & authorization users are not eligible to have access.",
+        "description2":"Created dashboard for admin and users. So they have some activities here like seeing orders, paying for their orders, updating their profile, etc.",
+        "description3":"Some activities for admin manage product adds a new product, make admin someone, Utilized stripe for payment method and nodeMailer, mail Gun to send mail",
+        "technology":"React, React-Bootstrap, Node, MongoDB, Express, JSON web token, Firebase, Dot env, React-Router, React-from-hooks",
         "liveLink": "https://polwel-convention-by-safi.netlify.app/",
         "gitHubClient":"https://github.com/Safiul-Azam/Polwel-Convention-Center",
         "gitHubServer": "",
-        "img": "https://i.ibb.co/3MKC4t8/project-7.png"
+        "img": "https://i.ibb.co/3MKC4t8/project-7.png",
+        "img2": "https://i.ibb.co/hCRcfvS/banner-1.png",
+        "img3": "https://i.ibb.co/178B92n/banner-3.png"
     },
     {
         "id": 6,
+        "titleName":"Wooden Tools",
+        "aboutSite":"woodworking tools manufacturing website",
+        "description1":"Implemented authentication by firebase and authorization by JSON web token. and without authentication & authorization users are not eligible to have access.",
+        "description2":"Created dashboard for admin and users. So they have some activities here like seeing orders, paying for their orders, updating their profile, etc.",
+        "description3":"Some activities for admin manage product adds a new product, make admin someone, Utilized stripe for payment method and nodeMailer, mail Gun to send mail",
+        "technology":"React, React-Bootstrap, Node, MongoDB, Express, JSON web token, Firebase, Dot env, React-Router, React-from-hooks",
         "liveLink": "https://safiul-azam.github.io/Diamond-Food/",
         "gitHubClient":"https://github.com/Safiul-Azam/Diamond-Food",
         "gitHubServer": "",
-        "img": "https://i.ibb.co/Dtkvdcx/project-5.png"
+        "img": "https://i.ibb.co/Dtkvdcx/project-5.png",
+        "img2": "https://i.ibb.co/hCRcfvS/banner-1.png",
+        "img3": "https://i.ibb.co/178B92n/banner-3.png"
     }
 ]
 
