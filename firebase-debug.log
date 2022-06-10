@@ -1,0 +1,147 @@
+[debug] [2022-06-10T16:19:11.188Z] ----------------------------------------------------------------------
+[debug] [2022-06-10T16:19:11.192Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-06-10T16:19:11.192Z] CLI Version:   10.8.0
+[debug] [2022-06-10T16:19:11.193Z] Platform:      win32
+[debug] [2022-06-10T16:19:11.193Z] Node Version:  v14.15.4
+[debug] [2022-06-10T16:19:11.202Z] Time:          Fri Jun 10 2022 22:19:11 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-06-10T16:19:11.203Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-10T16:19:11.303Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-10T16:19:11.303Z] > authorizing via signed-in user (safiulazamriad@gmail.com)
+[debug] [2022-06-10T16:19:11.303Z] [iam] checking project my-portfolio-b8fb3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-10T16:19:11.307Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-b8fb3:testIamPermissions [none]
+[debug] [2022-06-10T16:19:11.307Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-b8fb3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-10T16:19:13.700Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-b8fb3:testIamPermissions 200
+[debug] [2022-06-10T16:19:13.700Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-b8fb3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-10T16:19:13.701Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-b8fb3 [none]
+[debug] [2022-06-10T16:19:15.563Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-b8fb3 200
+[debug] [2022-06-10T16:19:15.564Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-b8fb3 {"projectId":"my-portfolio-b8fb3","projectNumber":"147577375582","displayName":"my-portfolio","name":"projects/my-portfolio-b8fb3","resources":{"hostingSite":"my-portfolio-b8fb3"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'my-portfolio-b8fb3'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-10T16:19:15.569Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-b8fb3 [none]
+[debug] [2022-06-10T16:19:16.360Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-b8fb3 200
+[debug] [2022-06-10T16:19:16.361Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-b8fb3 {"projectId":"my-portfolio-b8fb3","projectNumber":"147577375582","displayName":"my-portfolio","name":"projects/my-portfolio-b8fb3","resources":{"hostingSite":"my-portfolio-b8fb3"},"state":"ACTIVE"}
+[debug] [2022-06-10T16:19:16.364Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions [none]
+[debug] [2022-06-10T16:19:16.364Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-10T16:19:19.959Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions 200
+[debug] [2022-06-10T16:19:19.959Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions {"name":"projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[my-portfolio-b8fb3]: beginning deploy... 
+[info] i  hosting[my-portfolio-b8fb3]: found 18 files in build 
+[debug] [2022-06-10T16:19:19.976Z] [hosting] uploading with 200 concurrency
+[debug] [2022-06-10T16:19:19.978Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-06-10T16:19:20.198Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2022-06-10T16:19:20.198Z] [hosting][hash queue][FINAL] {"max":211,"min":11,"avg":25.38888888888889,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":220}
+[debug] [2022-06-10T16:19:20.199Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f:populateFiles [none]
+[debug] [2022-06-10T16:19:20.199Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f:populateFiles {"files":{"/asset-manifest.json":"92b01586f3e3e522db18d93098aa9a7a0254f51e50789c0c64ae888e12bc8c1e","/index.html":"f089276ccddba0d4a8bd8f418677a33fe66d1e86f8fd85c9b197e7d625be6c1b","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/favicon.ico":"b3580a022075fdde96fe17b1c28e338152a59999b4b2e92a0566407490edb9da","/static/js/787.4c5ce6b7.chunk.js":"4f521bf14845b19225d3931cf1336095c0a5d62c35a05f0a0ab0f410d21fde1b","/static/js/787.4c5ce6b7.chunk.js.map":"08cd1274607ae971e8d3e44e7e971018abf3f02ed3430aa52367571810c5b5a4","/static/js/main.290b06ca.js.LICENSE.txt":"3d78c89dc9c829cfefda1cff81875372805369af02e891b0c08c8b072b1304b4","/static/css/main.b6177946.css":"9b890f7898e58dfa267add0b456837cc6854313e0255ee02b43a888e2e124bad","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/static/css/main.b6177946.css.map":"8ada30cf00db38ae085ac73980d3d80a8cd8576856aee21fdfc85133a350452c","/projects.json":"eb2788c2773738ac6dc89920b185d7424b9d1ee4dce90c69e435811b6cff8684","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/static/media/Resume-of-Safiul-Azam-Riad.5db78cecc1ce79234983.pdf":"637d7d5376ec6eea8a1dbd942eeb1b55f4239e4ca8caa68df5b736e2fa959564","/static/media/portfolio-1.e1787475cdde1b74b3e0.png":"47862ff50d7e933da66a9610edeabd2ca258791b6a701f67676230ef13047b76","/static/js/main.290b06ca.js":"c21b16656174cb73d163678fb2d71ec5ab4b1fe9a48b020d7a7f9a7d4ebbacc8","/static/media/myPhoto.44b4051e089801576bd9.png":"bf428ca9c37d5750c6be8fe1c49c3ce84dfa26e562b498bd859524865708abec","/static/js/main.290b06ca.js.map":"4445148638a6e3cebe39c2cfa0e9d1125c30115825583d35f5227ad57249e547"}}
+[debug] [2022-06-10T16:19:21.995Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f:populateFiles 200
+[debug] [2022-06-10T16:19:21.995Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f:populateFiles {"uploadRequiredHashes":["3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","47862ff50d7e933da66a9610edeabd2ca258791b6a701f67676230ef13047b76","b3580a022075fdde96fe17b1c28e338152a59999b4b2e92a0566407490edb9da","eb2788c2773738ac6dc89920b185d7424b9d1ee4dce90c69e435811b6cff8684","bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","637d7d5376ec6eea8a1dbd942eeb1b55f4239e4ca8caa68df5b736e2fa959564","f089276ccddba0d4a8bd8f418677a33fe66d1e86f8fd85c9b197e7d625be6c1b","bf428ca9c37d5750c6be8fe1c49c3ce84dfa26e562b498bd859524865708abec","08cd1274607ae971e8d3e44e7e971018abf3f02ed3430aa52367571810c5b5a4","c21b16656174cb73d163678fb2d71ec5ab4b1fe9a48b020d7a7f9a7d4ebbacc8","3d78c89dc9c829cfefda1cff81875372805369af02e891b0c08c8b072b1304b4","aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","9b890f7898e58dfa267add0b456837cc6854313e0255ee02b43a888e2e124bad","8ada30cf00db38ae085ac73980d3d80a8cd8576856aee21fdfc85133a350452c","92b01586f3e3e522db18d93098aa9a7a0254f51e50789c0c64ae888e12bc8c1e","4f521bf14845b19225d3931cf1336095c0a5d62c35a05f0a0ab0f410d21fde1b","4445148638a6e3cebe39c2cfa0e9d1125c30115825583d35f5227ad57249e547"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files"}
+[debug] [2022-06-10T16:19:21.998Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [none]
+[debug] [2022-06-10T16:19:21.999Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2022-06-10T16:19:22.000Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/47862ff50d7e933da66a9610edeabd2ca258791b6a701f67676230ef13047b76 [none]
+[debug] [2022-06-10T16:19:22.000Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/47862ff50d7e933da66a9610edeabd2ca258791b6a701f67676230ef13047b76 [stream]
+[debug] [2022-06-10T16:19:22.001Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/b3580a022075fdde96fe17b1c28e338152a59999b4b2e92a0566407490edb9da [none]
+[debug] [2022-06-10T16:19:22.001Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/b3580a022075fdde96fe17b1c28e338152a59999b4b2e92a0566407490edb9da [stream]
+[debug] [2022-06-10T16:19:22.002Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/eb2788c2773738ac6dc89920b185d7424b9d1ee4dce90c69e435811b6cff8684 [none]
+[debug] [2022-06-10T16:19:22.003Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/eb2788c2773738ac6dc89920b185d7424b9d1ee4dce90c69e435811b6cff8684 [stream]
+[debug] [2022-06-10T16:19:22.004Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [none]
+[debug] [2022-06-10T16:19:22.004Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2022-06-10T16:19:22.005Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/637d7d5376ec6eea8a1dbd942eeb1b55f4239e4ca8caa68df5b736e2fa959564 [none]
+[debug] [2022-06-10T16:19:22.005Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/637d7d5376ec6eea8a1dbd942eeb1b55f4239e4ca8caa68df5b736e2fa959564 [stream]
+[debug] [2022-06-10T16:19:22.006Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/f089276ccddba0d4a8bd8f418677a33fe66d1e86f8fd85c9b197e7d625be6c1b [none]
+[debug] [2022-06-10T16:19:22.006Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/f089276ccddba0d4a8bd8f418677a33fe66d1e86f8fd85c9b197e7d625be6c1b [stream]
+[debug] [2022-06-10T16:19:22.007Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bf428ca9c37d5750c6be8fe1c49c3ce84dfa26e562b498bd859524865708abec [none]
+[debug] [2022-06-10T16:19:22.007Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bf428ca9c37d5750c6be8fe1c49c3ce84dfa26e562b498bd859524865708abec [stream]
+[debug] [2022-06-10T16:19:22.008Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/08cd1274607ae971e8d3e44e7e971018abf3f02ed3430aa52367571810c5b5a4 [none]
+[debug] [2022-06-10T16:19:22.008Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/08cd1274607ae971e8d3e44e7e971018abf3f02ed3430aa52367571810c5b5a4 [stream]
+[debug] [2022-06-10T16:19:22.009Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/c21b16656174cb73d163678fb2d71ec5ab4b1fe9a48b020d7a7f9a7d4ebbacc8 [none]
+[debug] [2022-06-10T16:19:22.009Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/c21b16656174cb73d163678fb2d71ec5ab4b1fe9a48b020d7a7f9a7d4ebbacc8 [stream]
+[debug] [2022-06-10T16:19:22.010Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3d78c89dc9c829cfefda1cff81875372805369af02e891b0c08c8b072b1304b4 [none]
+[debug] [2022-06-10T16:19:22.010Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3d78c89dc9c829cfefda1cff81875372805369af02e891b0c08c8b072b1304b4 [stream]
+[debug] [2022-06-10T16:19:22.011Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [none]
+[debug] [2022-06-10T16:19:22.012Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-06-10T16:19:22.012Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [none]
+[debug] [2022-06-10T16:19:22.013Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2022-06-10T16:19:22.016Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/9b890f7898e58dfa267add0b456837cc6854313e0255ee02b43a888e2e124bad [none]
+[debug] [2022-06-10T16:19:22.017Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/9b890f7898e58dfa267add0b456837cc6854313e0255ee02b43a888e2e124bad [stream]
+[debug] [2022-06-10T16:19:22.017Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/8ada30cf00db38ae085ac73980d3d80a8cd8576856aee21fdfc85133a350452c [none]
+[debug] [2022-06-10T16:19:22.018Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/8ada30cf00db38ae085ac73980d3d80a8cd8576856aee21fdfc85133a350452c [stream]
+[debug] [2022-06-10T16:19:22.019Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/92b01586f3e3e522db18d93098aa9a7a0254f51e50789c0c64ae888e12bc8c1e [none]
+[debug] [2022-06-10T16:19:22.019Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/92b01586f3e3e522db18d93098aa9a7a0254f51e50789c0c64ae888e12bc8c1e [stream]
+[debug] [2022-06-10T16:19:22.019Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4f521bf14845b19225d3931cf1336095c0a5d62c35a05f0a0ab0f410d21fde1b [none]
+[debug] [2022-06-10T16:19:22.020Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4f521bf14845b19225d3931cf1336095c0a5d62c35a05f0a0ab0f410d21fde1b [stream]
+[debug] [2022-06-10T16:19:22.021Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4445148638a6e3cebe39c2cfa0e9d1125c30115825583d35f5227ad57249e547 [none]
+[debug] [2022-06-10T16:19:22.021Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4445148638a6e3cebe39c2cfa0e9d1125c30115825583d35f5227ad57249e547 [stream]
+[debug] [2022-06-10T16:19:22.022Z] [hosting][populate queue][FINAL] {"max":1803,"min":1803,"avg":1803,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1827}
+[debug] [2022-06-10T16:19:22.022Z] [hosting] uploads queued: 18
+[debug] [2022-06-10T16:19:25.094Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 200
+[debug] [2022-06-10T16:19:25.095Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2022-06-10T16:19:25.490Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/b3580a022075fdde96fe17b1c28e338152a59999b4b2e92a0566407490edb9da 200
+[debug] [2022-06-10T16:19:25.490Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/b3580a022075fdde96fe17b1c28e338152a59999b4b2e92a0566407490edb9da [stream]
+[debug] [2022-06-10T16:19:25.550Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/637d7d5376ec6eea8a1dbd942eeb1b55f4239e4ca8caa68df5b736e2fa959564 200
+[debug] [2022-06-10T16:19:25.551Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/637d7d5376ec6eea8a1dbd942eeb1b55f4239e4ca8caa68df5b736e2fa959564 [stream]
+[debug] [2022-06-10T16:19:25.668Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/9b890f7898e58dfa267add0b456837cc6854313e0255ee02b43a888e2e124bad 200
+[debug] [2022-06-10T16:19:25.668Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/9b890f7898e58dfa267add0b456837cc6854313e0255ee02b43a888e2e124bad [stream]
+[debug] [2022-06-10T16:19:25.749Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/f089276ccddba0d4a8bd8f418677a33fe66d1e86f8fd85c9b197e7d625be6c1b 200
+[debug] [2022-06-10T16:19:25.750Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/f089276ccddba0d4a8bd8f418677a33fe66d1e86f8fd85c9b197e7d625be6c1b [stream]
+[debug] [2022-06-10T16:19:25.781Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/8ada30cf00db38ae085ac73980d3d80a8cd8576856aee21fdfc85133a350452c 200
+[debug] [2022-06-10T16:19:25.781Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/8ada30cf00db38ae085ac73980d3d80a8cd8576856aee21fdfc85133a350452c [stream]
+[debug] [2022-06-10T16:19:25.803Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4f521bf14845b19225d3931cf1336095c0a5d62c35a05f0a0ab0f410d21fde1b 200
+[debug] [2022-06-10T16:19:25.803Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4f521bf14845b19225d3931cf1336095c0a5d62c35a05f0a0ab0f410d21fde1b [stream]
+[debug] [2022-06-10T16:19:25.862Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/92b01586f3e3e522db18d93098aa9a7a0254f51e50789c0c64ae888e12bc8c1e 200
+[debug] [2022-06-10T16:19:25.863Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/92b01586f3e3e522db18d93098aa9a7a0254f51e50789c0c64ae888e12bc8c1e [stream]
+[debug] [2022-06-10T16:19:25.898Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b 200
+[debug] [2022-06-10T16:19:25.898Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2022-06-10T16:19:25.931Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/08cd1274607ae971e8d3e44e7e971018abf3f02ed3430aa52367571810c5b5a4 200
+[debug] [2022-06-10T16:19:25.931Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/08cd1274607ae971e8d3e44e7e971018abf3f02ed3430aa52367571810c5b5a4 [stream]
+[debug] [2022-06-10T16:19:26.006Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a 200
+[debug] [2022-06-10T16:19:26.006Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-06-10T16:19:26.307Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3d78c89dc9c829cfefda1cff81875372805369af02e891b0c08c8b072b1304b4 200
+[debug] [2022-06-10T16:19:26.307Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/3d78c89dc9c829cfefda1cff81875372805369af02e891b0c08c8b072b1304b4 [stream]
+[debug] [2022-06-10T16:19:26.467Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4445148638a6e3cebe39c2cfa0e9d1125c30115825583d35f5227ad57249e547 200
+[debug] [2022-06-10T16:19:26.467Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/4445148638a6e3cebe39c2cfa0e9d1125c30115825583d35f5227ad57249e547 [stream]
+[debug] [2022-06-10T16:19:26.545Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 200
+[debug] [2022-06-10T16:19:26.545Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2022-06-10T16:19:26.866Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/eb2788c2773738ac6dc89920b185d7424b9d1ee4dce90c69e435811b6cff8684 200
+[debug] [2022-06-10T16:19:26.866Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/eb2788c2773738ac6dc89920b185d7424b9d1ee4dce90c69e435811b6cff8684 [stream]
+[debug] [2022-06-10T16:19:26.923Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bf428ca9c37d5750c6be8fe1c49c3ce84dfa26e562b498bd859524865708abec 200
+[debug] [2022-06-10T16:19:26.923Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/bf428ca9c37d5750c6be8fe1c49c3ce84dfa26e562b498bd859524865708abec [stream]
+[debug] [2022-06-10T16:19:27.036Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/47862ff50d7e933da66a9610edeabd2ca258791b6a701f67676230ef13047b76 200
+[debug] [2022-06-10T16:19:27.036Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/47862ff50d7e933da66a9610edeabd2ca258791b6a701f67676230ef13047b76 [stream]
+[debug] [2022-06-10T16:19:27.431Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/c21b16656174cb73d163678fb2d71ec5ab4b1fe9a48b020d7a7f9a7d4ebbacc8 200
+[debug] [2022-06-10T16:19:27.431Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f/files/c21b16656174cb73d163678fb2d71ec5ab4b1fe9a48b020d7a7f9a7d4ebbacc8 [stream]
+[debug] [2022-06-10T16:19:27.431Z] [hosting][upload queue][FINAL] {"max":5434,"min":3099,"avg":4137,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":5436}
+[info] +  hosting[my-portfolio-b8fb3]: file upload complete 
+[debug] [2022-06-10T16:19:27.432Z] [hosting] deploy completed after 7472ms
+[debug] [2022-06-10T16:19:27.437Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "my-portfolio-b8fb3"
+    },
+    "site": "my-portfolio-b8fb3",
+    "version": "projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f"
+  }
+]
+[info] i  hosting[my-portfolio-b8fb3]: finalizing version... 
+[debug] [2022-06-10T16:19:27.438Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f updateMask=status%2Cconfig
+[debug] [2022-06-10T16:19:27.439Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-06-10T16:19:29.304Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f 200
+[debug] [2022-06-10T16:19:29.304Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f {"name":"projects/147577375582/sites/my-portfolio-b8fb3/versions/9acbbf5230420d5f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-06-10T16:19:18.712593Z","createUser":{"email":"safiulazamriad@gmail.com"},"finalizeTime":"2022-06-10T16:19:29.010809Z","finalizeUser":{"email":"safiulazamriad@gmail.com"}}
+[debug] [2022-06-10T16:19:29.304Z] [hosting] finalized version for my-portfolio-b8fb3:[object Object]
+[info] +  hosting[my-portfolio-b8fb3]: version finalized 
+[info] i  hosting[my-portfolio-b8fb3]: releasing new version... 
+[debug] [2022-06-10T16:19:29.306Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/releases versionName=projects%2F147577375582%2Fsites%2Fmy-portfolio-b8fb3%2Fversions%2F9acbbf5230420d5f
+[debug] [2022-06-10T16:19:29.306Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/147577375582/sites/my-portfolio-b8fb3/releases {"message":null}
