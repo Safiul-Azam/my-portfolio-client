@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Project = ({ project }) => {
-    const { liveLink, gitHubClient, gitHubServer, img } = project
+    
+    const { liveLink, gitHubClient, gitHubServer, img,id } = project
     return (
         <div class="card w-full rounded-tl-none rounded-tr-xl rounded-br-none rounded-bl-xl border ">
             <figure class="">
@@ -11,6 +13,7 @@ const Project = ({ project }) => {
                 <a target='_blank' rel="noopener noreferrer" href={liveLink} class="btn btn-outline btn-primary btn-xs  rounded-tl-none rounded-tr-md rounded-br-none">Live</a>
                 <a target='_blank' rel="noopener noreferrer" href={gitHubClient} class="btn btn-outline btn-primary btn-xs  rounded-tl-none rounded-tr-md rounded-br-none">GitHub Client</a>
                 {gitHubServer && <a target='_blank' rel="noopener noreferrer" href={gitHubServer} class="btn btn-outline btn-primary btn-xs rounded-tl-none rounded-tr-md rounded-br-none">GitHub Server</a>}
+                <Link to={`/projectId/${id}`} class="btn btn-outline btn-primary btn-xs  rounded-tl-none rounded-tr-md rounded-br-none">Details</Link>
             </div>
         </div>
     );
