@@ -1,5 +1,5 @@
 import React from 'react';
-import myPhoto from '../../images/myPhoto/portfolio-1.png'
+import myPhoto from '../../images/myPhoto/portfolio-2.jpeg'
 import file from '../../images/Resume-of-Safiul-Azam-Riad.pdf'
 import { FaDownload } from 'react-icons/fa';
 import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
@@ -17,7 +17,7 @@ const Banner = () => {
                     <h4 className='lg:text-xl text-lg text-white mb-4'>Hello!</h4>
                     <h2 class="lg:text-5xl text-3xl text-primary font-bold mb-4">This is Safi</h2>
                     <h3 class="lg:text-3xl text-2xl font-bold text-white mb-6 tracking-widest">I'm a Full-Stack Web Developer</h3>
-                    <h1 class="lg:text-3xl text-2xl font-bold text-white mb-6 tracking-widest" >
+                    {/* <h1 class="lg:text-3xl text-2xl font-bold text-white mb-6 tracking-widest" >
                     I'm a {' '}
                         <span style={{ color: 'red', fontWeight: 'bold' }}>
                             
@@ -36,7 +36,7 @@ const Banner = () => {
                                 delaySpeed={1000}
                             />
                         </span>
-                    </h1>
+                    </h1> */}
                     <a class="btn btn-primary font-sans btn-outline rounded-none px-8 tracking-widest text-white mb-10" href={file} download>Download resume<FaDownload className='ml-4' /></a>
                 </div>
             </div>
