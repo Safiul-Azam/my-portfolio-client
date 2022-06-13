@@ -25,7 +25,7 @@ const Banner = () => {
                     className='lg:w-3/4 w-full px-8'>
                     <h4 className='lg:text-xl text-lg text-white mb-4'>Hello!</h4>
                     <h2 class="lg:text-5xl text-3xl text-primary font-bold mb-4">This is Safi</h2>
-                    <h3 class="lg:text-3xl text-2xl font-bold text-white mb-6 tracking-widest">
+                    <h3 class="lg:text-3xl text-2xl font-bold text-white mb-6 tracking-widest">a
                         <Typewriter
                             options={{
                                 strings: [
