@@ -56,11 +56,11 @@ const Contact = () => {
                 <div className='w-full px-10'>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='grid grid-cols-2 gap-2 w-full mb-8 '>
-                            <input {...register("name")} name='name' type="text" placeholder="Your Name" class="input input-bordered bg-accent rounded-none input-primary text-lg w-full max-w-xs" />
-                            <input {...register("email")} name='email' type="email" placeholder="Your Email" class="input input-bordered bg-accent rounded-none input-primary text-lg w-full max-w-xs" />
+                            <input {...register("name")} name='name' type="text" placeholder="Your Name" class="input input-bordered bg-accent rounded-none input-primary text-lg w-full max-w-xs" required />
+                            <input {...register("email")} name='email' type="email" placeholder="Your Email" class="input input-bordered bg-accent rounded-none input-primary text-lg w-full max-w-xs" required />
                         </div>
-                        <input {...register("subject")} name='subject' type="text" placeholder="Your Subject" class="input input-bordered input-primary text-lg bg-accent rounded-none w-full mb-8 " />
-                        <textarea {...register("message")} name='message' class="textarea bg-accent rounded-none textarea-primary text-lg w-full mb-8" placeholder="Your Message"></textarea>
+                        <input {...register("subject")} name='subject' type="text" placeholder="Your Subject" class="input input-bordered input-primary text-lg bg-accent rounded-none w-full mb-8 " required />
+                        <textarea {...register("message")} name='message' class="textarea bg-accent rounded-none textarea-primary text-lg w-full mb-8" placeholder="Your Message" required></textarea>
                         <input type="submit" value='submit' class="btn rounded-none text-base btn-primary w-full mb-8 " />
                     </form>
                 </div>

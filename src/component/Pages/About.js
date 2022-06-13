@@ -20,7 +20,7 @@ const About = () => {
                     <h3 className='text-2xl text-primary mb-4'>Who am I?</h3>
                     <p className='text-white text-base mb-8'>This is Safiul Azam. And dedicated, efficient, and passionate Front end web developer. Despite being a non-technical student. Even then, my passion works in this field. Because coding is my passion. I have worked on some projects. If anyone wants to know about me, please contact me. I look forward to talking to you.</p>
                     <hr className=' opacity-40' />
-                    <div className='grid grid-cols-2 gap-4 text-white mt-8'>
+                    <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 text-white mt-8'>
                         <h2>First Name : Safiul Azam</h2>
                         <h2>Last Name : Riad</h2>
                         <h2>Age : 25</h2>
