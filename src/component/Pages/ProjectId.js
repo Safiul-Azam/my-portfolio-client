@@ -27,7 +27,7 @@ const ProjectId = () => {
                     <p>2- {projectData[0]?.description2}</p>
                     <p className='mb-4'>3- {projectData[0]?.description3}</p>
                     <h2 className="text-2xl text-white">Technology used</h2>
-                    <div className='grid grid-cols-8 gap-4 mt-4 px-10'>
+                    <div className='grid grid-flow-col-dense gap-4 mt-4 px-10'>
                         {
                             projectData[0]?.technology.split(',').map(i => <button className='btn glass disabled:'>{i}</button>)
                         }
