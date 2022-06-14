@@ -7,17 +7,17 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-    const { register, handleSubmit,reset } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        emailjs.send('service_qkbhv6n','template_k7f3499',data,'JxcfPjnSimcwKK-4Q')
-        .then((result) => {
-            if(result.status === 200){
-                reset()
-            }
-            console.log(result);
-        }, (error) => {
-            console.log(error.text);
-        });
+        emailjs.send('service_qkbhv6n', 'template_k7f3499', data, 'JxcfPjnSimcwKK-4Q')
+            .then((result) => {
+                if (result.status === 200) {
+                    reset()
+                }
+                console.log(result);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
     return (
         <div className='bg-accent pt-24 pb-16'>
@@ -26,8 +26,12 @@ const Contact = () => {
                 <span className=' lg:text-8xl text-6xl opacity-40'>CONTACT</span>
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-16 items-center container mx-auto'>
-                <div className='px-10'>
-                    <h3 className='text-3xl text-gray-400 mb-4'>I Want To Hear From You</h3>
+                <div
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    className='px-10'>
+                    <h3 className='text-3xl text-primary mb-4'>I Want To Hear From You</h3>
                     <p className='text-white text-lg mb-8'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                     <div>
                         <div className='flex items-center mb-10'>
@@ -53,14 +57,18 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full px-10'>
+                <div
+                 data-aos="fade-left"
+                 data-aos-easing="linear"
+                 data-aos-duration="1000"
+                className='w-full px-10'>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='grid grid-cols-2 gap-2 w-full mb-8 '>
-                            <input {...register("name")} name='name' type="text" placeholder="Your Name" class="input input-bordered bg-accent rounded-none input-primary text-lg w-full max-w-xs" required />
-                            <input {...register("email")} name='email' type="email" placeholder="Your Email" class="input input-bordered bg-accent rounded-none input-primary text-lg w-full max-w-xs" required />
+                            <input {...register("name")} name='name' type="text" placeholder="Your Name" class="input text-white input-bordered bg-transparent rounded-none input-primary text-lg w-full max-w-xs" required />
+                            <input {...register("email")} name='email' type="email" placeholder="Your Email" class="input text-white input-bordered bg-transparent  rounded-none input-primary text-lg w-full max-w-xs" required />
                         </div>
-                        <input {...register("subject")} name='subject' type="text" placeholder="Your Subject" class="input input-bordered input-primary text-lg bg-accent rounded-none w-full mb-8 " required />
-                        <textarea {...register("message")} name='message' class="textarea bg-accent rounded-none textarea-primary text-lg w-full mb-8" placeholder="Your Message" required></textarea>
+                        <input {...register("subject")} name='subject' type="text" placeholder="Your Subject" class="input text-white input-bordered input-primary text-lg bg-transparent rounded-none w-full mb-8 " required />
+                        <textarea {...register("message")} name='message' class="textarea text-white bg-transparent rounded-none textarea-primary text-lg w-full mb-8" placeholder="Your Message" required></textarea>
                         <input type="submit" value='submit' class="btn rounded-none text-base btn-primary w-full mb-8 " />
                     </form>
                 </div>

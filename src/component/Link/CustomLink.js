@@ -9,7 +9,7 @@ function CustomLink({ children, to, ...props }) {
       <div>
         <Link
         className='hover:bg-primary p-2 rounded'
-          style={{ backgroundColor: match ? "#DC143C" : "" }}
+          style={{ backgroundColor: match ? "#FF651C" : "" }}
           to={to}
           {...props}
         >

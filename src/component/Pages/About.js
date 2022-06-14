@@ -12,11 +12,11 @@ const About = () => {
                 <span className=' lg:text-8xl text-6xl opacity-40'>ABOUT ME</span>
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-1 items-center container mx-auto'>
-                <div className='lg:w-full md:w-1/2 w-full px-8 pb-10 mx-auto rounded-xl'>
-                    <img className='rounded-2xl border-t-8  border-b-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={photo} alt="" />
-
-                </div>
-                <div className='w-full px-8'>
+                <div
+                 data-aos="fade-right"
+                 data-aos-easing="linear"
+                 data-aos-duration="1000"
+                className='w-full px-8'>
                     <h3 className='text-2xl text-primary mb-4'>Who am I?</h3>
                     <p className='text-white text-base mb-8'>This is Safiul Azam. And dedicated, efficient, and passionate Front end web developer. Despite being a non-technical student. Even then, my passion works in this field. Because coding is my passion. I have worked on some projects. If anyone wants to know about me, please contact me. I look forward to talking to you.</p>
                     <hr className=' opacity-40' />
@@ -29,6 +29,14 @@ const About = () => {
                         <h2>Phone : (+880) 1866775563</h2>
                     </div>
                     <a class="btn btn-primary font-sans btn-outline rounded-none tracking-widest text-white my-4" href={file} download>Download resume<FaDownload className='ml-4' /></a>
+                </div>
+                <div
+                 data-aos="fade-left"
+                 data-aos-easing="linear"
+                 data-aos-duration="1000"
+                className='lg:w-full md:w-1/2 w-full px-8 pb-10 mx-auto rounded-xl'>
+                    <img className='rounded-2xl border-t-8  border-r-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={photo} alt="" />
+
                 </div>
             </div>
             <div>

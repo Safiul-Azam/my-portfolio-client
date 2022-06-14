@@ -9,14 +9,14 @@ import Typewriter from 'typewriter-effect';
 const Banner = () => {
 
     return (
-        <div className='bg-accent h-auto pt-16'>
+        <div className='bg-accent h-auto pt-12'>
             <div class="container mx-auto lg:flex items-center flex-row">
                 <div
                     data-aos="fade-right"
                     data-aos-easing="linear"
                     data-aos-duration="1000"
-                    className='lg:w-1/2 md:w-1/2 w-full px-8 lg:pt-10 pb-10 mx-auto rounded-xl'>
-                    <img className='rounded-2xl border-t-8  border-b-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={myPhoto} alt='MyPhoto' />
+                    className='lg:w-1/2 md:w-1/2 w-full px-8 lg:pt-6 pb-10 mx-auto rounded-xl'>
+                    <img className='rounded-2xl border-l-8 border-b-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={myPhoto} alt='MyPhoto' />
                 </div>
                 <div
                     data-aos="fade-left"
