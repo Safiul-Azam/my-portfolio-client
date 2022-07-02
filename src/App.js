@@ -10,13 +10,17 @@ import ProjectId from './component/Pages/ProjectId';
 import ParticleBackground from './component/Link/ParticleBackground';
 import AnimationCursor from './component/Link/AnimationCursor';
 import ScrollTop from './component/Link/ScrollTop';
+import SocialIcon from './component/Link/SocialIcon';
+import Footer from './component/Home/Footer';
 
 function App() {
   return (
     <div>
     <AnimationCursor/>
+    <SocialIcon></SocialIcon>
     <ParticleBackground />
     <Header></Header>
+    <ScrollTop></ScrollTop>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
@@ -26,7 +30,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="projectId/:id"element={<ProjectId/>} />
       </Routes>
-      <ScrollTop></ScrollTop>
+      <Footer></Footer>
     </div>
   );
 }

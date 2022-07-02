@@ -23,7 +23,7 @@ const ScrollTop = () => {
     return (
         <div className=''>
             {scroll && (
-                <button onClick={scrollUp}><FaAngleDoubleUp  className='fixed flex items-center justify-center bottom-4 right-4 lg:bottom-10 lg:right-10 text-primary rounded-full w-10 h-10 lg:w-10 lg:h-10  shadow-2xl bg-slate-600'></FaAngleDoubleUp></button>
+                <button className='btn-circle btn-primary btn-outline' onClick={scrollUp}><FaAngleDoubleUp className='fixed flex items-center justify-center bottom-4 right-4 lg:bottom-10 lg:right-4 text-primary rounded-full text-5xl shadow-2xl'></FaAngleDoubleUp></button>
             )}
         </div>
     );

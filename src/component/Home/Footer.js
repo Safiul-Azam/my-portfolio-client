@@ -1,9 +1,11 @@
 import React from 'react';
+import SocialIcon from '../Link/SocialIcon';
 
 const Footer = () => {
     return (
-        <div>
-            <p>Made Exclusively for MD Zillur Rahman by MD Zillur Rahman &copy 2022 </p>
+        <div className='bg-accent py-24'>
+            <p className='text-center'>&copy; 2022 Timing made with by Md Safiul Azma </p>
+            <SocialIcon></SocialIcon>
         </div>
     );
 };
