@@ -7,10 +7,12 @@ import Blogs from './component/Pages/Blogs';
 import Contact from './component/Pages/Contact';
 import Portfolio from './component/Pages/Portfolio';
 import ProjectId from './component/Pages/ProjectId';
+import ParticleBackground from './component/Link/ParticleBackground';
 
 function App() {
   return (
     <div>
+    <ParticleBackground />
     <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />

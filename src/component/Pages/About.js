@@ -2,7 +2,6 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import photo from '../../images/myPhoto/myPhoto.png'
 import file from '../../images/Resume-of-Safiul-Azam-Riad.pdf'
-import Progress from './Progress';
 
 const About = () => {
     return (
@@ -13,9 +12,6 @@ const About = () => {
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-1 items-center container mx-auto'>
                 <div
-                 data-aos="fade-right"
-                 data-aos-easing="linear"
-                 data-aos-duration="1000"
                 className='w-full px-8'>
                     <h3 className='text-2xl text-primary mb-4'>Who am I?</h3>
                     <p className='text-white text-base mb-8'>This is Safiul Azam. And dedicated, efficient, and passionate Front end web developer. Despite being a non-technical student. Even then, my passion works in this field. Because coding is my passion. I have worked on some projects. If anyone wants to know about me, please contact me. I look forward to talking to you.</p>
@@ -31,9 +27,6 @@ const About = () => {
                     <a class="btn btn-primary font-sans btn-outline rounded-none tracking-widest text-white my-4" href={file} download>Download resume<FaDownload className='ml-4' /></a>
                 </div>
                 <div
-                 data-aos="fade-left"
-                 data-aos-easing="linear"
-                 data-aos-duration="1000"
                 className='lg:w-full md:w-1/2 w-full px-8 pb-10 mx-auto rounded-xl'>
                     <img className='rounded-2xl border-t-8  border-r-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={photo} alt="" />
 

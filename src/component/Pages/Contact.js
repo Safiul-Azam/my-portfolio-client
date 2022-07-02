@@ -27,9 +27,6 @@ const Contact = () => {
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-16 items-center container mx-auto'>
                 <div
-                    data-aos="fade-right"
-                    data-aos-easing="linear"
-                    data-aos-duration="1000"
                     className='px-10'>
                     <h3 className='text-3xl text-primary mb-4'>I Want To Hear From You</h3>
                     <p className='text-white text-lg mb-8'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
@@ -58,9 +55,6 @@ const Contact = () => {
                     </div>
                 </div>
                 <div
-                 data-aos="fade-left"
-                 data-aos-easing="linear"
-                 data-aos-duration="1000"
                 className='w-full px-10'>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='grid grid-cols-2 gap-2 w-full mb-8 '>
