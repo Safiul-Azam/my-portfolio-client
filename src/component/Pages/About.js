@@ -10,7 +10,7 @@ const About = () => {
                 <h2 className='text-white absolute font-extrabold z-10 top-1/3 lg:left-1/3 right-1/3  text-2xl lg:text-4xl'>ABOUT <span className='text-primary'>ME</span></h2>
                 <span className=' lg:text-8xl text-6xl opacity-40'>ABOUT ME</span>
             </div>
-            <div className='grid lg:grid-cols-2 grid-cols-1 gap-1 items-center container mx-auto'>
+            <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-1 items-center container mx-auto'>
                 <div
                 className='w-full px-8'>
                     <h3 className='text-2xl text-primary mb-4'>Who am I?</h3>
@@ -26,14 +26,10 @@ const About = () => {
                     </div>
                     <a class="btn btn-primary font-sans btn-outline rounded-none tracking-widest text-white my-4" href={file} download>Download resume<FaDownload className='ml-4' /></a>
                 </div>
-                <div
-                className='lg:w-full md:w-1/2 w-full px-8 pb-10 mx-auto rounded-xl'>
+                <div className='lg:w-full md:w-full w-full px-8 pb-10 mx-auto rounded-xl'>
                     <img className='rounded-2xl border-t-8  border-r-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={photo} alt="" />
 
                 </div>
-            </div>
-            <div>
-                {/* <h2 className='text-white text-center my-16 font-extrabold z-10 top-1/3 lg:left-1/3 right-1/3  text-2xl lg:text-3xl'>Skills</h2> */}
             </div>
         </div>
     );

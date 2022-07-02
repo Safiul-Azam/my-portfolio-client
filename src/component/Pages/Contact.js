@@ -1,8 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { FaAddressBook } from 'react-icons/fa'
-import { FaEnvelopeOpen } from 'react-icons/fa'
-import { FaPhone } from 'react-icons/fa'
+import { FaAddressBook,FaEnvelopeOpen,FaPhone  } from 'react-icons/fa'
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -20,36 +18,35 @@ const Contact = () => {
             });
     };
     return (
-        <div className='bg-accent pt-24 pb-16'>
+        <div className='bg-accent pt-16 pb-20'>
             <div className='text-center relative mb-16'>
                 <h2 className='text-white absolute font-extrabold z-10 top-1/3 lg:left-1/3 right-1/3  text-2xl lg:text-4xl'>GET ME <span className='text-primary'>TOUCH</span></h2>
                 <span className=' lg:text-8xl text-6xl opacity-40'>CONTACT</span>
             </div>
-            <div className='grid lg:grid-cols-2 grid-cols-1 gap-16 items-center container mx-auto'>
-                <div
-                    className='px-10'>
+            <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-16 items-center container mx-auto'>
+                <div className='px-10'>
                     <h3 className='text-3xl text-primary mb-4'>I Want To Hear From You</h3>
                     <p className='text-white text-lg mb-8'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                     <div>
-                        <div className='flex items-center mb-10'>
-                            <FaAddressBook className='text-primary text-5xl' />
+                        <div className='flex items-center mb-4'>
+                            <FaAddressBook className='text-primary text-2xl lg:text-5xl' />
                             <div className='ml-4 '>
                                 <h2 className='text-xl text-gray-400'>Address</h2>
-                                <span className='text-white text-base tracking-wider'>Gazipur city, Dhaka, Bangladesh</span>
+                                <span className='text-white text-sm lg:text-lg tracking-wider'>Gazipur city, Dhaka, Bangladesh</span>
                             </div>
                         </div>
-                        <div className='flex items-center mb-10'>
-                            <FaEnvelopeOpen className='text-primary text-5xl' />
-                            <div className='ml-4 '>
+                        <div className='flex items-center mb-4'>
+                            <FaEnvelopeOpen className='text-primary text-2xl lg:text-5xl' />
+                            <div className='ml-4'>
                                 <h2 className='text-xl text-gray-400'>Email</h2>
-                                <span className='text-white text-base tracking-wider'>safiulazamriad@gmail.com</span>
+                                <span className='text-white  text-sm lg:text-lg tracking-wider'>safiulazamriad@gmail.com</span>
                             </div>
                         </div>
                         <div className='flex items-center'>
-                            <FaPhone className='text-primary text-5xl' />
+                            <FaPhone className='text-primary text-2xl lg:text-5xl' />
                             <div className='ml-4 '>
                                 <h2 className='text-xl text-gray-400'>Phone Number</h2>
-                                <span className='text-white text-base tracking-wider'>(+880) 1866775563</span>
+                                <span className='text-white text-sm lg:text-lg tracking-wider'>(+880) 1866775563</span>
                             </div>
                         </div>
                     </div>

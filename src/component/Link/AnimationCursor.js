@@ -8,7 +8,7 @@ const AnimationCursor = () => {
       outerSize={50}
       color='235, 74, 74'
       outerAlpha={0.2}
-      innerScale={0.7}
+      innerScale={0.1}
       outerScale={2}
       clickables={[
         'a',

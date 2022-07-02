@@ -10,18 +10,12 @@ const Banner = () => {
 
     return (
         <div className='bg-accent h-auto pt-12' id='home'>
-            <div class="container mx-auto lg:flex items-center flex-row">
+            <div class="container mx-auto md:flex lg:flex items-center flex-row">
                 <div
-                    data-aos="fade-right"
-                    data-aos-easing="linear"
-                    data-aos-duration="1000"
                     className='lg:w-1/2 md:w-1/2 w-full px-8 lg:pt-6 pb-10 mx-auto rounded-xl'>
-                    <img className='rounded-2xl border-l-8 border-b-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={myPhoto} alt='MyPhoto' />
+                    <img className='rounded-2xl border-l-8 border-b-8 border-primary shadow-2xl w-full md:w-3/4 lg:w-3/4' src={myPhoto} alt='MyPhoto' />
                 </div>
                 <div
-                    data-aos="fade-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="1000"
                     className='lg:w-3/4 w-full px-8'>
                     <h4 className='lg:text-xl text-lg text-white mb-4'>Hello!</h4>
                     <h2 class="lg:text-5xl text-3xl text-primary font-bold mb-4">This is Safi</h2>
@@ -30,9 +24,9 @@ const Banner = () => {
                             options={{
                                 strings: [
                                  'Front-End Web Developer',
-                                 'Full-Stack Web Developer.',
+                                 'MERN-Stack Developer.',
                                  'React Developer.',
-                                 'Coder.'
+                                 'Web  Instructor'
                                 ],
                                 autoStart: true,
                                 loop: true,
