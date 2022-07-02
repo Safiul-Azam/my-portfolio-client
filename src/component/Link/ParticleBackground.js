@@ -34,10 +34,10 @@ const ParticlesAnimation = () => {
         },
         particles: {
           color: {
-            value:'#eb4a4a',
+            value:'#ffffff',
           },
           links: {
-            color: "#ffffff",
+            color: "#eb4a4a",
             distance: 150,
             enable: true,
             opacity: 0.2,

@@ -8,10 +8,13 @@ import Contact from './component/Pages/Contact';
 import Portfolio from './component/Pages/Portfolio';
 import ProjectId from './component/Pages/ProjectId';
 import ParticleBackground from './component/Link/ParticleBackground';
+import AnimationCursor from './component/Link/AnimationCursor';
+import ScrollTop from './component/Link/ScrollTop';
 
 function App() {
   return (
     <div>
+    <AnimationCursor/>
     <ParticleBackground />
     <Header></Header>
       <Routes>
@@ -23,6 +26,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="projectId/:id"element={<ProjectId/>} />
       </Routes>
+      <ScrollTop></ScrollTop>
     </div>
   );
 }

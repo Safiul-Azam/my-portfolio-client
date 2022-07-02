@@ -9,7 +9,7 @@ import Typewriter from 'typewriter-effect';
 const Banner = () => {
 
     return (
-        <div className='bg-accent h-auto pt-12'>
+        <div className='bg-accent h-auto pt-12' id='home'>
             <div class="container mx-auto lg:flex items-center flex-row">
                 <div
                     data-aos="fade-right"
@@ -39,7 +39,7 @@ const Banner = () => {
                             }}
                         />
                     </h3>
-                    <a class="btn btn-primary font-sans btn-outline rounded-none px-8 tracking-widest text-white mb-10" href={file} download>Download resume<FaDownload className='ml-4' /></a>
+                    <a class="btn btn-primary font-sans btn-outline rounded-none px-8 tracking-widest text-white mb-10" href={file} download>Get Resume<FaDownload className='ml-4' /></a>
                 </div>
             </div>
         </div>
