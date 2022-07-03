@@ -16,7 +16,7 @@ const Portfolio = () => {
             </div>
             <div className='container gap-10 mx-auto grid lg:grid-cols-3 grid-cols-1'>
                 {
-                    projects.slice(0,3).map(project => <Project
+                    projects.map(project => <Project
                         key={project.id}
                         project={project}
                     ></Project>

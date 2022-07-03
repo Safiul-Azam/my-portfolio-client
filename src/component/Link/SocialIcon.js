@@ -1,9 +1,9 @@
 import React from 'react';
-import {  FaFacebookF, FaGithubAlt, FaGreaterThan, FaInstagram, FaLessThan, FaLinkedinIn } from 'react-icons/fa';
+import {  FaFacebookF, FaGithubAlt, FaGreaterThan, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const SocialIcon = () => {
     return (
-        <div className='fixed top-72 lg:right-4 bg-none lg:bg-accent rounded-full py-4 px-1 flex flex-col'>
+        <div className='z-50 fixed top-72 lg:right-4 bg-none lg:bg-accent rounded-full py-4 px-1 flex flex-col'>
             <div class="navbar bg-accent">
                 <div class="navbar-start">
                     <div class="dropdown">
