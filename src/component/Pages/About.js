@@ -7,10 +7,10 @@ const About = () => {
     return (
         <div className='bg-accent h-auto py-20'>
             <div className='text-center relative mb-16'>
-                <h2 className='text-white absolute font-extrabold z-10 top-3 lg:top-4 lg:left-1/3 lg:right-1/3 left-20 text-3xl lg:text-4xl'>ABOUT <span className='text-primary'>ME</span></h2>
+                <h2 className='text-white absolute font-extrabold z-10 top-3 lg:top-4 lg:left-1/3 md:left-80 lg:right-1/3 left-20 text-3xl lg:text-4xl'>ABOUT <span className='text-primary'>ME</span></h2>
                 <span className=' lg:text-7xl text-6xl opacity-40'>ABOUT ME</span>
             </div>
-            <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-1 items-center w-11/12 mx-auto'>
+            <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-1 items-center w-11/12 mx-auto'>
                 <div
                 className='w-full px-8'>
                     <h3 className='text-2xl text-primary mb-4'>Who am I?</h3>
@@ -26,7 +26,7 @@ const About = () => {
                     </div>
                     <a class="btn btn-primary font-sans btn-outline rounded-none tracking-widest text-white my-4" href={file} download>Download resume<FaDownload className='ml-4' /></a>
                 </div>
-                <div className='lg:w-full md:w-full w-full px-8 pb-10 mx-auto rounded-xl'>
+                <div className='lg:w-full md:w-full md:mx-auto w-full px-8 pb-10 rounded-xl mx-auto'>
                     <img className='rounded border-t-8  border-r-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={photo} alt="" />
 
                 </div>

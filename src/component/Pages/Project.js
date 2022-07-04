@@ -6,9 +6,9 @@ const Project = ({ project }) => {
 
     const { liveLink, gitHubClient, gitHubServer, img, id, titleName, aboutSite } = project
     return (
-        <div class="card rounded-tl-none rounded-tr-xl rounded-br-none rounded-bl-xl border ">
-            <figure class="hover:scale-125 duration-500 hover:mb-4">
-                <img src={img} alt="img" />
+        <div class=" w-11/12 mx-auto card rounded-tl-none rounded-tr-xl rounded-br-none rounded-bl-xl border ">
+            <figure class="hover:scale-125 duration-500 hover:mb-4 mx-auto md:w-11/12 mt-6">
+                <img className='w-full' src={img} alt="img" />
             </figure>
             <div className='mt-4 px-2'>
                 <h2 className='text-2xl text-white'>{titleName} - <span className='text-lg'>{aboutSite}</span></h2>

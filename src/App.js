@@ -12,6 +12,7 @@ import AnimationCursor from './component/Link/AnimationCursor';
 import ScrollTop from './component/Link/ScrollTop';
 import SocialIcon from './component/Link/SocialIcon';
 import Footer from './component/Home/Footer';
+import AllPortfolio from './component/Pages/AllPortfolio';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="portfolio" element={<Portfolio />} />
+        <Route path="allPortfolio" element={<AllPortfolio />} />
         <Route path="blogs" element={<Blogs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="projectId/:id"element={<ProjectId/>} />
