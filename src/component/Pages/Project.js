@@ -7,7 +7,7 @@ const Project = ({ project }) => {
     const { liveLink, gitHubClient, gitHubServer, img, id, titleName, aboutSite } = project
     return (
         <div class="card rounded-tl-none rounded-tr-xl rounded-br-none rounded-bl-xl border ">
-            <figure class="">
+            <figure class="hover:scale-125 duration-500 hover:mb-4">
                 <img src={img} alt="img" />
             </figure>
             <div className='mt-4 px-2'>

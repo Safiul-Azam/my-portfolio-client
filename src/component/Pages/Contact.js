@@ -20,10 +20,10 @@ const Contact = () => {
     return (
         <div className='bg-accent pt-16 pb-20'>
             <div className='text-center relative mb-16'>
-                <h2 className='text-white absolute font-extrabold z-10 top-1/3 lg:left-1/3 right-1/3  text-2xl lg:text-4xl'>GET ME <span className='text-primary'>TOUCH</span></h2>
+                <h2 className='text-white absolute font-extrabold z-10 lg:top-1/3 lg:left-1/3 left-14 top-3 lg:right-1/3  text-3xl lg:text-4xl'>GET ME <span className='text-primary'>TOUCH</span></h2>
                 <span className=' lg:text-8xl text-6xl opacity-40'>CONTACT</span>
             </div>
-            <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-16 items-center container mx-auto'>
+            <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-16 items-center w-11/12 mx-auto'>
                 <div className='px-10'>
                     <h3 className='text-3xl text-primary mb-4'>I Want To Hear From You</h3>
                     <p className='text-white text-lg mb-8'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>

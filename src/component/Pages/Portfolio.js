@@ -8,13 +8,14 @@ const Portfolio = () => {
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
+    console.log(projects)
     return (
         <div className='bg-accent pt-24 pb-24'>
             <div className='text-center relative mb-16'>
-                <h2 className='text-white absolute font-extrabold z-10 top-1/3 lg:left-1/3 right-1/3  text-2xl lg:text-4xl'>PRACTICE <span className='text-primary'>PROJECTS</span></h2>
+                <h2 className='text-white absolute font-extrabold z-10 top-4 lg:top-7 lg:left-1/3 left-10 lg:right-1/3 text-2xl lg:text-4xl'>PRACTICE <span className='text-primary'>PROJECTS</span></h2>
                 <span className=' lg:text-8xl text-6xl opacity-40'>PORTFOLIO</span>
             </div>
-            <div className='container gap-10 mx-auto grid lg:grid-cols-3 grid-cols-1'>
+            <div className='w-5/6 mx-auto grid lg:grid-cols-3 grid-cols-1 gap-8'>
                 {
                     projects.slice(0,3).map(project => <Project
                         key={project.id}

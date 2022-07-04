@@ -11,15 +11,15 @@ const ProjectId = () => {
             .then(data => setProjects(data))
     }, [])
     const projectData = projects.filter(project => project.id === parseInt(id))
-    console.log(projectData)
+    console.log(projectData[0]?.userFeatures)
 
 
     return (
         <div className='bg-accent h-auto pt-24 pb-24'>
-            <div class="card w-full container mx-auto ">
+            <div class="card w-11/12 mx-auto ">
                 <div className='lg:grid-cols-2 grid mb-20'>
                     <figure>
-                        <img src={projectData[0]?.img} alt="img" />
+                        <img width={500} src={projectData[0]?.img} alt="img" />
                     </figure>
                     <div className=''>
                         <h2 className="text-2xl text-white">Technology used</h2>
@@ -41,28 +41,22 @@ const ProjectId = () => {
                     <p>2- {projectData[0]?.description2}</p>
                     <p className='mb-4'>3- {projectData[0]?.description3}</p>
                 </div>
-                <div className='grid grid-cols-2 text-white px-8 mt-16 mb-20'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 text-white px-8 mt-16 mb-20'>
                     <div>
-                        <h2 className='text-2xl text-primary mb-2'>Features for normal user</h2>
+                        <h2 className='text-2xl text-primary mb-2'>{projectData[0]?.userFeatures && 'Features for normal user'}</h2>
                         <ul>
-                            <li>User can to purchase any product</li>
-                            <li>User can to pay with card</li>
-                            <li>User can update your profile</li>
-                            <li>User can delete your added product if you not paid yet. etc</li>
+                            {projectData[0]?.userFeatures?.map(userFeature => <li>{userFeature|| 'user features not set yet!'}</li>)}
                         </ul>
                     </div>
                     <div>
-                        <h2 className='text-2xl text-primary mb-2'>Features for admin user</h2>
+                        <h2 className='text-2xl text-primary mb-2'>{projectData[0].adminFeatures &&'Features for admin user'}</h2>
                         <ul>
-                            <li>Admin can make admin else</li>
-                            <li>Admin can add, delete any product</li>
-                            <li>Admin can shipping that product user paid</li>
-                            <li>Admin can update his profile. etc</li>
+                            {projectData[0]?.adminFeatures?.map(adminFeature => <li>{adminFeature || 'admin feature not set yet!'}</li>)}
                         </ul>
                     </div>
                 </div>
-                <h2 className='text-4xl text-primary font-bold mb-6 text-center'>Some Screen short from this project</h2>
-                <div className='grid grid-cols-4 gap-4'>
+                <h2 className=' text-2xl lg:text-4xl text-primary font-bold mb-6 text-center'>Some Screen short from this project</h2>
+                <div className='grid grid-cols-1 lg:grid-cols-4 gap-4 w-11/12 mx-auto'>
                 <img src={projectData[0]?.img} alt="img" />
                 <img src={projectData[0]?.img2} alt="img" />
                 <img src={projectData[0]?.img3} alt="img" />

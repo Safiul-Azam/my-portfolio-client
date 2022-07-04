@@ -10,6 +10,8 @@
         "liveLink": "https://wooden-tools-manufacturer.web.app/",
         "gitHubClient":"https://github.com/Safiul-Azam/wooden-tools-manufacturer-client",
         "gitHubServer": "https://github.com/Safiul-Azam/wooden-tools-manufacturer-server",
+        "userFeatures":["User can to purchase any product","User can to pay with card","User can update his/her profile","User can delete his/her added product if he/she not paid yet. etc"],
+        "adminFeatures":["Admin can make admin else","Admin can add, delete any product","Admin can shipping that product user paid","Admin can update his profile. etc"],
         "img": "https://i.ibb.co/J3GvB54/wooden-Tools-1.png",
         "img2": "https://i.ibb.co/MD1NkY0/wooden-Tools-2.png",
         "img3": "https://i.ibb.co/qkBqyd6/wooden-Tools-3.png",
