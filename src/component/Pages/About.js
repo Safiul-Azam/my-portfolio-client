@@ -27,7 +27,7 @@ const About = () => {
                     <a class="btn btn-primary font-sans btn-outline rounded-none tracking-widest text-white my-4" href={file} download>Download resume<FaDownload className='ml-4' /></a>
                 </div>
                 <div className='lg:w-full md:w-full w-full px-8 pb-10 mx-auto rounded-xl'>
-                    <img className='rounded-2xl border-t-8  border-r-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={photo} alt="" />
+                    <img className='rounded border-t-8  border-r-8 border-primary bg-black shadow-2xl w-full md:w-3/4 lg:w-3/4' src={photo} alt="" />
 
                 </div>
             </div>
