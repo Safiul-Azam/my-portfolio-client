@@ -8,7 +8,7 @@ const About = () => {
         <div className='bg-accent h-auto py-20'>
             <div className='text-center relative mb-16'>
                 <h2 className='text-white absolute font-extrabold z-10 top-3 lg:top-4 lg:left-1/3 md:left-80 lg:right-1/3 left-20 text-3xl lg:text-4xl'>ABOUT <span className='text-primary'>ME</span></h2>
-                <span className=' lg:text-7xl text-6xl opacity-40'>ABOUT ME</span>
+                <span className=' lg:text-7xl text-6xl text-gray-500 opacity-20'>ABOUT ME</span>
             </div>
             <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-1 items-center w-11/12 mx-auto'>
                 <div

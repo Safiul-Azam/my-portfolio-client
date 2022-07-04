@@ -21,7 +21,7 @@ const Contact = () => {
         <div className='bg-accent md:pt-8 pt-16 pb-20'>
             <div className='text-center relative mb-16'>
                 <h2 className='text-white absolute font-extrabold z-10 lg:top-1/3 lg:left-1/3 left-14 top-3 lg:right-1/3 md:left-1/3 text-3xl lg:text-4xl'>GET ME <span className='text-primary'>TOUCH</span></h2>
-                <span className=' lg:text-8xl text-6xl opacity-40'>CONTACT</span>
+                <span className=' lg:text-8xl text-6xl text-gray-500 opacity-20'>CONTACT</span>
             </div>
             <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-16 items-center md:w-11/12 w-full lg:w-11/12 mx-auto'>
                 <div className='px-10'>
