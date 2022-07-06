@@ -10,7 +10,7 @@ const Banner = () => {
 
     return (
         <div className='bg-accent h-auto pt-16' id='home'>
-            <div class="w-4/5 mx-auto md:flex lg:flex items-center flex-row">
+            <div class="container mx-auto md:flex lg:flex items-center flex-row">
                 <div
                     className='lg:w-1/2 md:mt-10 w-full px-8 lg:pt-16 pb-10 mx-auto rounded-xl'>
                     <img className='rounded border-l-8 border-b-8 border-primary shadow-2xl w-full lg:w-3/4' src={myPhoto} alt='MyPhoto' />
