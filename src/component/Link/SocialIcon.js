@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaGithubAlt, FaGreaterThan, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaGithub, FaGreaterThan, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const SocialIcon = () => {
     return (
@@ -18,7 +18,7 @@ const SocialIcon = () => {
                                 <FaLinkedinIn className='text-white text-lg lg:text-2xl'></FaLinkedinIn>
                             </a>
                             <a href='https://github.com/Safiul-Azam' class="mb-4">
-                                <FaGithubAlt className='text-white text-lg lg:text-2xl'></FaGithubAlt>
+                                <FaGithub className='text-white text-lg lg:text-2xl'></FaGithub>
                             </a>
                             <a href='https://github.com/Safiul-Azam' class="mb-4">
                                 <FaInstagram className='text-white text-lg lg:text-2xl'></FaInstagram>
@@ -37,7 +37,7 @@ const SocialIcon = () => {
                                 <FaLinkedinIn className='text-white text-sm lg:text-2xl'></FaLinkedinIn>
                             </a>
                             <a href='https://github.com/Safiul-Azam' class="mb-4">
-                                <FaGithubAlt className='text-white text-2xl'></FaGithubAlt>
+                                <FaGithub className='text-white text-2xl'></FaGithub>
                             </a>
                             <a href='https://github.com/Safiul-Azam' class="mb-4">
                                 <FaInstagram className='text-white text-2xl'></FaInstagram>

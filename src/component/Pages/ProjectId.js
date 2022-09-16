@@ -49,9 +49,9 @@ const ProjectId = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className='text-2xl text-primary mb-2'>{projectData[0].adminFeatures &&'Features for admin user'}</h2>
+                        <h2 className='text-2xl text-primary mb-2'>{projectData[0]?.adminFeatures &&'Features for admin user'}</h2>
                         <ul>
-                            {projectData[0]?.adminFeatures?.map(adminFeature => <li>{adminFeature || 'admin feature not set yet!'}</li>)}
+                            {projectData[0]?.adminFeatures?.map(adminFeature =><li>{adminFeature}</li>)}
                         </ul>
                     </div>
                 </div>

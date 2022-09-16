@@ -14,7 +14,7 @@ const About = () => {
                 <div
                 className='w-full px-8'>
                     <h3 className='text-2xl text-primary mb-4'>Who am I?</h3>
-                    <p className='text-white text-base mb-8'>This is Safiul Azam. And dedicated, efficient, and passionate Front end web developer. Despite being a non-technical student. Even then, my passion works in this field. Because coding is my passion. I have worked on some projects. If anyone wants to know about me, please contact me. I look forward to talking to you.</p>
+                    <p className='text-white text-base mb-8'>This is Safiul Azam. a dedicated, enthusiastic and passionate Front end web developer. I like development even though I am a student of Islamic studies background. cause my passion works in this field. This is where I find the fun that comes from creating something different. And creating something different and knowing something new makes me happy. I know this thing is more needed here. Although I am a non-technical student still I think this field is for everyone. The first thing that is needed here is a skill. So I think if I have skills then I am also a member of here. And finally, I think that the interest in learning something new in my mind will lead me forward. </p>
                     <hr className=' opacity-40' />
                     <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 text-white mt-8'>
                         <h2>First Name : Safiul Azam</h2>
