@@ -1,26 +1,32 @@
 [
   {
     "id": 1,
-    "titleName": "Wooden Tools",
-    "aboutSite": "woodworking tools manufacturing website",
-    "description1": "Implemented authentication by firebase and authorization by JSON web token. and without authentication & authorization users are not eligible to have access.",
-    "description2": "Created dashboard for admin and users. So they have some activities here like seeing orders, paying for their orders, updating their profile, etc.",
-    "description3": "Some activities for admin manage product adds a new product, make admin someone, Utilized stripe for payment method and nodeMailer, mail Gun to send mail",
-    "technology": "React, React-Bootstrap, Node, MongoDB, Express, JSON web token, Firebase, Dot env, React-Router, React-from-hooks",
-    "liveLink": "https://wooden-tools-manufacturer.web.app/",
-    "gitHubClient": "https://github.com/Safiul-Azam/wooden-tools-manufacturer-client",
-    "gitHubServer": "https://github.com/Safiul-Azam/wooden-tools-manufacturer-server",
+    "titleName": "Sultan Luxury Hotel Site",
+    "aboutSite": "Hotel facilities and room booking website",
+    "descriptions": [
+      "This site is created with an awesome UI design and implemented some features and functionality.And it is responsive to all devices.",
+      "Implemented OAuth for authorization and authentication by JSON web token. Users can book any book on those dates on which the room is not booked yet.",
+      "Created dashboard, used in dashboard recharts-package for AreaChart and PieChart. And it has a different view for admin and user.",
+      "Implemented slider, carousel, and animation. Hosted project in firebase & Backend site in Render."
+    ],
+    "technology": "React, TailwindCss, Context-API, Node, MongoDB, Express, JSON web token, Firebase Dotenv, Swiper, Recharts, React-date-range, Axios, OAuth",
+    "liveLink": "https://sultan-luxury-hotel.web.app/",
+    "gitHubClient": "https://github.com/Safiul-Azam/the-sultan-luxury-hotel-client",
+    "gitHubServer": "https://github.com/Safiul-Azam/the-sultan-luxury-hotel-server",
     "userFeatures": [
-      "User can to purchase any product",
-      "User can to pay with card",
-      "User can update his/her profile",
-      "User can delete his/her added product if he/she not paid yet. etc"
+      "User can update his/her profile.",
+      "User can see all room and his/her booked room through the dashboard.",
+      "User can delete his/her booked if dates is not overan update his/her profile",
+      "User can book any room with dates, adult, children",
+      "But users can not book on those dates on which the room is already booked.",
+      "User can give some review with rating"
     ],
     "adminFeatures": [
-      "Admin can make admin else",
-      "Admin can add, delete any product",
-      "Admin can shipping that product user paid",
-      "Admin can update his profile. etc"
+      "Admins can add a room with detail",
+      "Admins can change a room's details",
+      "Admins can delete any user and any room",
+      "Admins can not delete and modify any review and rating.",
+      "admin can update his profile."
     ],
     "img": "https://i.ibb.co/J3GvB54/wooden-Tools-1.png",
     "img2": "https://i.ibb.co/MD1NkY0/wooden-Tools-2.png",

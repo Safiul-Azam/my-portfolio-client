@@ -11,7 +11,7 @@ const ProjectId = () => {
             .then(data => setProjects(data))
     }, [])
     const projectData = projects.filter(project => project.id === parseInt(id))
-    console.log(projectData[0]?.userFeatures)
+    console.log(projectData[0]?.descriptions)
 
 
     return (
@@ -37,9 +37,9 @@ const ProjectId = () => {
                 </div>
                 <div className='px-8 mt-8 text-white'>
                     <h2 className='text-2xl mb-4 text-primary'>{projectData[0]?.titleName} -- {projectData[0]?.aboutSite}</h2>
-                    <p>1- {projectData[0]?.description1}</p>
-                    <p>2- {projectData[0]?.description2}</p>
-                    <p className='mb-4'>3- {projectData[0]?.description3}</p>
+                        {
+                            projectData[0]?.descriptions.map((description,index) => <p>{index + 1}-{description}</p>)
+                        }
                 </div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 text-white px-8 mt-16 mb-20'>
                     <div>
